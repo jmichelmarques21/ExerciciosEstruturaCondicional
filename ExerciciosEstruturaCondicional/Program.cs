@@ -48,8 +48,25 @@ namespace ExerciciosEstruturaCondicional {
 
             */
 
+            // Exercício 04 - Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
 
+            Console.WriteLine("Digite o horário de início e o de fim do jogo (na mesma linha): ");
+            string[] horarios = Console.ReadLine().Split(' ');
+            int inicio = int.Parse(horarios[0]);
+            int fim = int.Parse(horarios[1]);
 
+            if (fim < inicio) {
+                int duracao = fim + 24 - inicio;
+                Console.WriteLine("O jogo durou {0} hora(s).", duracao);
+            }
+            else if (fim > inicio) {
+                int duracao = fim - inicio;
+                Console.WriteLine("O jogo durou {0} hora(s).", duracao);
+            }
+            else {
+                Console.WriteLine("O jogo durou 24 horas.");
+            }
+            
 
 
 
