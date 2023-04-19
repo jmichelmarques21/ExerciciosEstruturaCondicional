@@ -32,7 +32,23 @@ namespace ExerciciosEstruturaCondicional {
 
             */
 
-            // Exercício 03 - 
+            /* Exercício 03 - Leia 2 valores inteiros (A e B). Após isso, o programa deve mostrar uma mensagem "São múltiplos" ou "Não são múltiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem ser digitados em ordem crescente ou decrescente.
+
+            Console.WriteLine("Digite dois números inteiros (na mesma linha): ");
+            string[] numeros = Console.ReadLine().Split(' ');
+            int num1 = int.Parse(numeros[0]);
+            int num2 = int.Parse(numeros[1]);
+
+            if (num1 % num2 == 0 || num2 % num1 == 0) {
+                Console.WriteLine("São múltiplos!");
+            }
+            else {
+                Console.WriteLine("Não são múltiplos!");
+            }
+
+            */
+
+
 
 
 
